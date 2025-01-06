@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController; //declares that t
 @RestController
 @RequestMapping("/api") //path through "/api"
 
-public class ControllerGet {
+public class Controllers {
     @GetMapping("/greeting")
     @Operation(summary = "Get Greeting", description = "Returns a greeting message.")
     public String getGreeting() {
