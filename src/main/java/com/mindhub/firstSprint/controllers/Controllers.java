@@ -1,14 +1,14 @@
 package com.mindhub.firstSprint.controllers;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation; //documenting API endpoints
+import io.swagger.v3.oas.annotations.Parameter; //To document the parameters of a method
+import io.swagger.v3.oas.annotations.responses.ApiResponse; //To document a specific response that the endpoint can return (line 28 and 29)
+import io.swagger.v3.oas.annotations.responses.ApiResponses; //to include multiple @ApiResponse in a single method (line 27)
 import org.springframework.web.bind.annotation.GetMapping; //Get requests
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable; //Binds a URL value to a method parameter
+import org.springframework.web.bind.annotation.PostMapping; //handles HTTP requests of type POST
+import org.springframework.web.bind.annotation.RequestBody; //Binds the HTTP request body to the method parameter
+import org.springframework.web.bind.annotation.RequestParam; //Binds Query parameters to a method parameter
 import org.springframework.web.bind.annotation.RequestMapping; //URL prefix for controller
 import org.springframework.web.bind.annotation.RestController; //declares that the class methods handle HTTP requests
 
